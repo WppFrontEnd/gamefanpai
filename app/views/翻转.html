@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script id="G--xyscore-load" type="text/javascript" charset="utf-8" async="" src="http://plug.xiaoyu.kuaizhe.com/client/js03/xyscore_main.js"></script>
+	</head>
+	<style>
+		.qcontainer{
+			-webkit-perspective: 400;
+			width: 220px;
+			height: 300px;
+		}
+		.film{
+			-webkit-transform-style: preserve-3d;
+    		-webkit-transition: 1.5s;
+		}
+		.face{
+			backface-visibility:hidden;
+			-webkit-backface-visibility: hidden;
+			position:absolute;
+		}
+		.qcontainer:hover .film {
+		    -webkit-transform: rotateY(180deg);
+		    -moz-transform: rotateY(180deg);
+		}
+		.back{
+			-webkit-transform: rotateY(180deg);
+		    -moz-transform: rotateY(180deg);
+		    background: -webkit-gradient(linear,left top,left bottom,from(#fdbb5a),to(#db5726));
+		    background: -moz-linear-gradient(top,#fdbb5a,#db5726);
+		    width: 220px;
+		    height: 300px;
+		}
+
+	</style>
+	<body>
+		<div class="qcontainer">
+			<div class="film">
+				<div class="face front">
+					<img src="../images/fanpai/1.png" >
+				</div>
+				<div class="face back">
+					haha 背面
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
